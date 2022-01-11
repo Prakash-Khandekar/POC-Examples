@@ -1,0 +1,40 @@
+<br>
+<label> Select Field</label>
+<select (change)="selectChangeHandler($event)" class="form-select" aria-label="Default select example">
+    <option selected>Select</option>
+    <option value="Id">ID</option>
+    <option value="DOJ">Date of Joining</option>
+    <option value="DOB">Date of Birth</option>
+  </select>
+  
+  
+<h2 class="text-center">Sort List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Id</th>
+            <th> First Name</th>
+            <th> Last Name</th>
+            <th> PinCode</th>
+            <th> Date Of Joining</th>
+            <th> Date Of Birth</th>
+            <th> Mobile Number</th>
+            <th> Status</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let student of students">
+            
+            <td>{{ student.id }}</td>
+            <td>{{ student.firstName }}</td>
+            <td>{{ student.lastName }}</td>
+            <td>{{ student.pinCode }}</td>
+            <td>{{ student.doj}}</td>
+            <td>{{ student.dob}}</td>
+            <td>{{ student.moNo }}</td>
+            <td>{{ student.status }}</td>
+           
+        </tr>
+    </tbody>
+</table>
