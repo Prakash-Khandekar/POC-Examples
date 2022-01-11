@@ -67,6 +67,10 @@ public class UserServiceImpl implements IUserService {
 	public List<UserInfo> fechByPinCode(Long pinCode) {
 		return repo.findByPinCode(pinCode)	;						
 				}
+	@Override
+	public List<UserInfo> fetchAllData() {
+		return repo.findAll();
+	}
 
 	@Override
 	public List<UserInfo> fetchByNameOrSurnameOrPinCode(String fName, String lName, Long pinCode) {
@@ -84,6 +88,8 @@ public class UserServiceImpl implements IUserService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 
 

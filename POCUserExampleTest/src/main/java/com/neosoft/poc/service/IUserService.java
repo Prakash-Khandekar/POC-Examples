@@ -23,6 +23,9 @@ public interface IUserService {
 	//public String hardDelete(Integer id); 
 	
 	public List<UserInfo> findByFName(String fName);
+	
+	public List<UserInfo> fetchAllData();
+
 
 
 }
