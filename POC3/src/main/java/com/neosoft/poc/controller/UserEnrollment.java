@@ -138,7 +138,7 @@ public class UserEnrollment {
 	}
 	
 	@CrossOrigin(origins = "http://localhost:4200")
-	@GetMapping("/search")
+	@GetMapping("/search") 
 	public ResponseEntity<List<UserInfo>> getUserByName(@Param("firstName") String firstName, @Param("lastName") String lastName,
 			@Param("pinCode") Long pinCode) {
 		System.out.println("Search URL called");
